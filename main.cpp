@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
         counter+=1;
       }
       else{
-      	cout<<endl;
+        cout<<endl;
         cout<<"The file doesn't exist or isn't a valid bitmap."<<endl;
         cout<<endl;
       }
@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
     at least two files with the same dimensions*/
   if(counter <2)
   {
-  	cout<<endl;
+    cout<<endl;
     cout<<"Composite image cannot be created."<<endl;
     cout<<endl;
   }
