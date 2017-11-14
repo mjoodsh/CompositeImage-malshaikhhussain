@@ -53,7 +53,9 @@ int main(int argc, char *argv[])
         counter+=1;
       }
       else{
+      	cout<<endl;
         cout<<"The file doesn't exist or isn't a valid bitmap."<<endl;
+        cout<<endl;
       }
     }
     /*validate the rest of images other than the first image*/
@@ -69,7 +71,9 @@ int main(int argc, char *argv[])
     at least two files with the same dimensions*/
   if(counter <2)
   {
+  	cout<<endl;
     cout<<"Composite image cannot be created."<<endl;
+    cout<<endl;
   }
   else
   {
@@ -95,12 +99,16 @@ bool validatImage(string fn, int w, int h){
   {
     temp = Btemp.toPixelMatrix();
     if(temp.size()!=w || temp[0].size()!=h){
+      cout<<endl;
       cout<<"The file is NOT the same dimensions as the first image loaded"<<endl;
+      cout<<endl;
       return false;
     }
     return true;
   }
+  cout<<endl;
   cout<<"The file doesn't exist or isn't a valid bitmap."<<endl;
+  cout<<endl;
   return false;
 }
 
